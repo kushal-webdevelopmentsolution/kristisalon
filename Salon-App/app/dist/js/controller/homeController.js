@@ -1,0 +1,1 @@
+"use strict";app.controller("homeController",function(o,r,t){});
