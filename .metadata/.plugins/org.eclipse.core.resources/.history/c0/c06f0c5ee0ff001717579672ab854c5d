@@ -1,0 +1,51 @@
+
+var gulp = require('gulp'),
+   uglify = require('gulp-uglify'),
+   jshint = require('gulp-jshint'),
+   concat = require('gulp-concat');
+
+
+
+gulp.task('commonjs', function () {
+	   return gulp.src(['app/js/jquery-1.11.1.min.js',
+		   				'app/js/main.js',
+		   				'app/js/plugins.js'])
+	      .pipe(jshint())
+	      .pipe(jshint.reporter('default'))
+	      .pipe(uglify())
+	      .pipe(concat('jqueryLib.js'))
+	      .pipe(gulp.dest('app/dist/js'));
+	});
+
+gulp.task('controllers', function () {
+	   return gulp.src(['app/js/controller/*.js'])
+	      .pipe(jshint())
+	      .pipe(jshint.reporter('default'))
+	      .pipe(uglify())
+	      //.pipe(concat('jqueryLib.js'))
+	      .pipe(gulp.dest('app/dist/js/controller/'));
+	});
+
+gulp.task('services', function () {
+	   return gulp.src(['app/js/services/*.js'])
+	      .pipe(jshint())
+	      .pipe(jshint.reporter('default'))
+	      .pipe(uglify())
+	      .pipe(concat('services.js'))
+	      .pipe(gulp.dest('app/dist/js/services/'));
+	});
+
+gulp.task('css', function () {
+	   return gulp.src('app/css/*.css')
+	      .pipe(jshint())
+	      .pipe(jshint.reporter('default'))
+	      .pipe(uglify())
+	      //.pipe(concat('app.js'))
+	      .pipe(gulp.dest('app/dist/css'));
+	});
+
+
+gulp.task('build', ['commonjs','constoller', 'services', 'css'], function () {
+   gulp.watch(['app/js/controller/*.js','app/js/services/*.js','app/css/*.css'], ['build']);
+});
+

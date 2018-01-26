@@ -1,0 +1,5 @@
+server.port=9000
+spring.datasource.url= jdbc:postgresql://192.168.0.22:5432/kristisalon 
+spring.datasource.username=salonDB
+spring.datasource.password=nareshkumar
+spring.po

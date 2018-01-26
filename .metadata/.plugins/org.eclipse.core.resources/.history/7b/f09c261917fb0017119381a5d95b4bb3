@@ -1,0 +1,13 @@
+'use strict';
+
+app.controller('imagesController', function($scope, $rootScope, salonService, $timeout){
+	$rootScope.enableSlider=false;
+	$rootScope.enableFooter=false;
+	
+	function imageController(){
+		$scope.images = salonService.getImages().then(function(images){
+			console.log(images);
+		});
+	}
+	
+})

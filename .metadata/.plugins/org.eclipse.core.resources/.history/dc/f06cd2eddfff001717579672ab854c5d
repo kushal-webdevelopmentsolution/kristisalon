@@ -1,0 +1,30 @@
+{
+	"name": "demoApp",
+	"version": "0.5.0",
+	"scripts": {
+		"start": "concurrently \"node server.js\" \"gulp build"\"
+	},
+	"dependencies": {
+		"body-parser": "^1.15.1",
+		"express": "4.x",
+		"express-session": "~1.13",
+		"helmet": "^2.1.8",
+		"http": "0.0.0",
+		"request": "x.x",
+		"restler": "x.x",
+		"multer": "^1.1.0",
+    	"path": "^0.12.7",
+    	"cors": "2.8.4"
+	},
+	"devDependencies": {
+		"q": "1.0.1",
+		"concurrently": "3.5.0",
+		"gulp-concat": "~2.2.0",
+      	"gulp-uglify": "~0.2.1",
+      	"gulp-jshint": "~1.5.1",
+      	"gulp": "~3.5.6"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	}
+}

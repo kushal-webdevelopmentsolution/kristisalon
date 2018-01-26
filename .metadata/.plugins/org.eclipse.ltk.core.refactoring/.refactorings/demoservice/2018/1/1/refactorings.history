@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;demoservice/src/main/java/com/demo/service/controller/menuController.java&apos; to &apos;MenuController.java&apos;" description="Rename resource &apos;menuController.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/demo/service/controller/menuController.java" name="MenuController.java" stamp="1514828017294" updateReferences="true"/>
+</session>

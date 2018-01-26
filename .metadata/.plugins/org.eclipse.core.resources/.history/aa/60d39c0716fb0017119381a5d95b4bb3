@@ -1,0 +1,11 @@
+'use strict';
+
+app.controller('imagesController', function($scope, $rootScope, salonService, $timeout){
+	
+	function imageController(){
+		$scope.images = salonService.getImages().then(function(){
+			
+		});
+	}
+	
+})

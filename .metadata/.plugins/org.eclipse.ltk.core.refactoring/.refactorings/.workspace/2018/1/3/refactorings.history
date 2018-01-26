@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;demo/app/uploads&apos;" deleteContents="false" description="Delete resource &apos;demo/app/uploads&apos;" element1="/demo/app/uploads" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1515901123237"/>&#x0A;<refactoring comment="Delete resource &apos;demo/app/js/directives/input-type-file.js&apos;" deleteContents="false" description="Delete resource &apos;demo/app/js/directives/input-type-file.js&apos;" element1="/demo/app/js/directives/input-type-file.js" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1516469049991"/>
+</session>
