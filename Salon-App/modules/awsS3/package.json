@@ -1,0 +1,7 @@
+{
+  "name": "awsS3 utilities",
+  "description": "S3 Utilities",
+  "private": true,
+  "version": "1.0.0",
+  "main": "awsS3.js"
+}
