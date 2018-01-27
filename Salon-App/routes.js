@@ -1,6 +1,5 @@
 module.exports = function(app){
-	var s3 = require("./modules/awsS3");
-	
+	var s3 = require("awsS3");
 	
 	app.get('/app/*',function(req,res,next){
 	 next();

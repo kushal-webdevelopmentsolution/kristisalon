@@ -6,7 +6,7 @@ var helmet = require('helmet');
 var http = require('http');
 var app = express();
 
-var port = 80;
+var port = 5434;
 
 require('./app/routes')(app)
 app.use(express.static(__dirname));
