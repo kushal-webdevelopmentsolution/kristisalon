@@ -12,16 +12,16 @@ angular.module('serviceModule',['restModule'])
 			},
 			function (error){
 				console.log(error);
-			})
+			}).$promise
 		},
-		getImages: function(){
-			return demoService.getAllImages({},
+		getImages: function(group){
+			return demoService.getImagesByGroupname({ groupName:group },
 			function (){
 				console.log('All Images service called');
 			},
 			function (error){
 				console.log(error);
-			})
+			}).$promise
 		},
 		createImage: function(imagedto){
 			return demoService.createImage({},imagedto,
@@ -30,7 +30,7 @@ angular.module('serviceModule',['restModule'])
 			},
 			function (error){
 				console.log(error);
-			})
+			}).$promise
 		},
 		upload: function(file){
 			console.log("file ",file);
@@ -40,7 +40,7 @@ angular.module('serviceModule',['restModule'])
 				},
 				function (error){
 					console.log(error);
-				})
+				}).$promise
 		}
 	};
 });

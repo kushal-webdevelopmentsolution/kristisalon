@@ -1,0 +1,7 @@
+{
+  "name": "awsDynamoDB utilities",
+  "description": "awsDynamoDB Utilities",
+  "private": true,
+  "version": "1.0.0",
+  "main": "main.js"
+}

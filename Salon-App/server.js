@@ -7,15 +7,14 @@ var http = require('http');
 var app = express();
 
 var port = 5434;
-
-require('./app/routes')(app)
+require('./app/webservice')(app)
 app.use(express.static(__dirname));
 app.use(helmet());
 
 var server = http.createServer(app);
 server.listen(port);
 
-console.log("Demo App Started on "+port);
+console.log("Salon App Started on "+port);
 
 exports = module.exports = app;
 

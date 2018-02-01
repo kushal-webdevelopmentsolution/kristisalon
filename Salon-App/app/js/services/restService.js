@@ -1,32 +1,31 @@
 'use strict';
 
-var urlPrefix = '/demoservice';
-var serviceurl = 'http://localhost:9000';
+var urlPrefix = '/api/app';
 var reqheaders = {'Authorization':'Basic a3Jpc3RpOmt1c2hhbDIyMDk=','Content-Type':'application/json'};
 angular.module('restModule',['ngResource'])
 .factory('demoService', function($resource){
 	return $resource(
 			urlPrefix ,{},{
 				getMenus:{
-					url: serviceurl + urlPrefix +'/getMenus',
+					url: urlPrefix +'/menus',
 					method: 'GET',
 					headers: reqheaders,
 					isArray: true
 				},
 				getAllImages:{
-					url: serviceurl + urlPrefix +'/getAllImage',
+					url: urlPrefix +'/getAllImage',
 					method: 'GET',
 					headers: reqheaders,
 					isArray: true
 				},
 				getImagesByGroupname:{
-					url: serviceurl + urlPrefix +'/getImageByGroupName/:groupName',
+					url: urlPrefix +'/getImages/:groupName',
 					method: 'GET',
 					headers: reqheaders,
 					isArray: true
 				},
 				createImage:{
-					url: serviceurl + urlPrefix +'/saveImage',
+					url: urlPrefix +'/saveImage',
 					method: 'POST',
 					headers: reqheaders,
 					isObject: true
@@ -38,11 +37,10 @@ angular.module('restModule',['ngResource'])
 	return $resource(
 			'/uploadImage',{},{
 				upload:{
-					url: "/uploadImage",
+					url: urlPrefix+"/uploadImage",
 					method: "POST",
-					headers:{},
-		            transformRequest: angular.identity,
-		            headers: { 'Authorization':undefined,'Content-Type': undefined }
+					transformRequest: angular.identity,
+		            headers:{ 'Authorization':'Basic a3Jpc3RpOmt1c2hhbDIyMDk=','Content-Type': undefined }
 				}
 			}
 	)

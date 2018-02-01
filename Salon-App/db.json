@@ -1,0 +1,178 @@
+{
+  "menus": [
+    {
+      "id": 1,
+      "name": "home",
+      "path": "#!/home",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "about",
+      "path": "#!/about",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "name": "gallery",
+      "path": "#!/gallery",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "name": "services",
+      "path": "#!/services",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "name": "contact",
+      "path": "#!/contact",
+      "order": 5
+    }
+  ],
+  "uploads": {
+    "Slider": [
+      {
+        "imgurl": "uploads/slider-1.jpg",
+        "imgGroup": "Slider",
+        "imgOrder": "1",
+        "active": "true",
+        "id": "r12ed90Hf"
+      },
+      {
+        "imgurl": "uploads/slider-2.jpg",
+        "imgGroup": "Slider",
+        "imgOrder": "2",
+        "active": "true",
+        "id": "Hk9Q_cCrz"
+      },
+      {
+        "imgurl": "uploads/slider-3.jpg",
+        "imgGroup": "Slider",
+        "imgOrder": "3",
+        "active": "true",
+        "id": "rJ0E_9RSf"
+      }
+    ],
+    "Gallery": [
+      {
+        "imgurl": "uploads/gallery-1.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "1",
+        "active": "true",
+        "id": "H1JcO5CSf"
+      },
+      {
+        "imgurl": "uploads/gallery-2.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "2",
+        "active": "true",
+        "id": "rJepuqArM"
+      },
+      {
+        "imgurl": "uploads/gallery-3.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "3",
+        "active": "true",
+        "id": "S1V0d5RHM"
+      },
+      {
+        "imgurl": "uploads/gallery-4.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "4",
+        "active": "true",
+        "id": "rkskYcArz"
+      },
+      {
+        "imgurl": "uploads/gallery-5.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "5",
+        "active": "true",
+        "id": "ryaeYqArf"
+      },
+      {
+        "imgurl": "uploads/gallery-6.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "6",
+        "active": "true",
+        "id": "H1nWF5CBf"
+      },
+      {
+        "imgurl": "uploads/gallery-7.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "7",
+        "active": "true",
+        "id": "BynMt90Hf"
+      },
+      {
+        "imgurl": "uploads/gallery-8.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "8",
+        "active": "true",
+        "id": "rksVt9ABz"
+      },
+      {
+        "imgurl": "uploads/gallery-9.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "9",
+        "active": "true",
+        "id": "HJsBY9ABG"
+      },
+      {
+        "imgurl": "uploads/gallery-10.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "10",
+        "active": "true",
+        "id": "S15IF5Arz"
+      },
+      {
+        "imgurl": "uploads/gallery-11.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "11",
+        "active": "true",
+        "id": "SygOYc0rM"
+      },
+      {
+        "imgurl": "uploads/gallery-12.jpg",
+        "imgGroup": "Gallery",
+        "imgOrder": "12",
+        "active": "true",
+        "id": "ryrtY9CSz"
+      }
+    ],
+    "Staff": [
+      {
+        "imgurl": "uploads/person-1.jpg",
+        "imgGroup": "Staff",
+        "imgOrder": "1",
+        "active": "true",
+        "id": "H1Te9cRSG"
+      },
+      {
+        "imgurl": "uploads/person-2.jpg",
+        "imgGroup": "Staff",
+        "imgOrder": "2",
+        "active": "true",
+        "id": "rJQf9cAHM"
+      },
+      {
+        "imgurl": "uploads/person-3.jpg",
+        "imgGroup": "Staff",
+        "imgOrder": "3",
+        "active": "true",
+        "id": "SJrN59CSf"
+      },
+      {
+        "imgurl": "uploads/person-4.jpg",
+        "imgGroup": "Staff",
+        "imgOrder": "4",
+        "active": "true",
+        "id": "r1Erc9Crf"
+      }
+    ],
+    "Services": []
+  },
+  "Customers": [],
+  "Users": []
+}

@@ -1,1 +1,1 @@
-"use strict";app.controller("headerController",function(e,n,t,o){t.getMenu().$promise.then(function(n){e.menus=n})});
+"use strict";app.controller("headerController",function(e,n,t,r){t.getMenu().then(function(n){e.menus=n}),t.getImages("Slider").then(function(n){e.sliders=n})});

@@ -1,12 +1,11 @@
 'use strict';
 
-app.controller('uploadController', function($scope, $rootScope, salonService, $timeout){
+app.controller('uploadController', function($scope, $rootScope, salonService, $timeout, $route){
 	
 	$rootScope.enableSlider=false;
 	$rootScope.enableFooter=false;
 	$scope.image = {
-			"name":null,
-			"imgurl":null,
+			"imgurl":"uploads/",
 			"imgGroup":"Slider",
 			"imgOrder":"1",
 			"active":"true"
@@ -18,21 +17,14 @@ app.controller('uploadController', function($scope, $rootScope, salonService, $t
 	}
 	$scope.orders = orders;
 	
-	$scope.uploadFile = function(file,image){
+	$scope.uploadFile = function(file,imageData){
 		console.log(file);
-		image.imgurl += file.name;
+		imageData.imgurl += file.name;
 		var fd = new FormData();
+		fd.append('image',JSON.stringify(imageData));
 		fd.append('file', file);
-		salonService.upload(fd).$promise.then(function(){
-			salonService.createImage(image).$promise.then(function(){
-				$scope.image = {
-						"name":null,
-						"imgurl":null,
-						"imgGroup":"Slider",
-						"imgOrder":"1",
-						"active":"true"
-				}
-			});
+		salonService.upload(fd).then(function(res){
+			$route.reload();
 		});
 		
 	}

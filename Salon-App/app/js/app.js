@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('demoApp', ['ngRoute','restModule','serviceModule']);
+var app = angular.module('salonApp', ['ngRoute','restModule','serviceModule']);
 	app.config(['$routeProvider','$httpProvider',function($routeProvider,$httpProvider){
 		
 		$routeProvider

@@ -5,7 +5,7 @@ app.controller('imagesController', function($scope, $rootScope, salonService, $t
 	$rootScope.enableFooter=false;
 	
 	function imagesController(){
-		$scope.images = salonService.getImages().$promise.then(function(images){
+		$scope.images = salonService.getImages().then(function(images){
 			$scope.images = images;
 		});
 	}

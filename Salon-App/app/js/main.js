@@ -10,6 +10,7 @@
 			$(".mobile-navigation").slideToggle();
 		});
 
+
 		// Changing background image using data-attribute
 		$("[data-bg-image]").each(function(){
 			var retina = window.devicePixelRatio > 1;
@@ -31,11 +32,11 @@
 		});
 
 		// hero-slider
-		$(".hero-slider").flexslider({
+		/*$(".hero-slider").flexslider({
 			controlNav: true,
 			directionNav: false,
 			animation: "fade"
-		});
+		});*/
 		var $container = $('.filterable-items');
 
 		$container.imagesLoaded(function(){

@@ -1,1 +1,1 @@
-"use strict";app.controller("imagesController",function(e,n,o,t){function i(){e.images=o.getImages().$promise.then(function(n){e.images=n})}n.enableSlider=!1,n.enableFooter=!1,i()});
+"use strict";app.controller("imagesController",function(e,n,t,o){function i(){e.images=t.getImages().then(function(n){e.images=n})}n.enableSlider=!1,n.enableFooter=!1,i()});

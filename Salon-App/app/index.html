@@ -11,7 +11,7 @@
 <script src="js/ie-support/respond.js"></script>
 <![endif]-->
 </head>
-<body ng-app="demoApp" ng-cloak>
+<body ng-app="salonApp" ng-cloak>
 
 	<div id="site-content">
 			<header class="site-header">
@@ -29,7 +29,7 @@
 					<div class="main-navigation" ng-controller="headerController">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
-							<li ng-repeat="menu in menus | orderBy:'id'" class="menu-item" ng-class="{'current-menu-item': routeItem(menu.name)}"><a href="{{menu.url}}">{{menu.name}}</a></li>
+							<li ng-repeat="menu in menus | orderBy:'id'" class="menu-item" ng-class="{'current-menu-item': routeItem(menu.name)}"><a href="{{menu.path}}">{{menu.name}}</a></li>
 						</ul> <!-- .menu -->
 					</div> <!-- .main-navigation -->
 
@@ -47,19 +47,19 @@
 							<a href="#" class="button large">Read more</a>
 						</div>
 					</li>
-					<li data-bg-image="dummy/slider-2@2x.jpg">
+					<li data-bg-image="dummy/slider-1@2x.jpg">
 						<div class="container">
 							<h3 class="slider-subtitle">Your header goes here</h3>
 							<h2 class="slider-title">Professional</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maiores illo eligendi obcaecati reiciendis, vel perspiciatis aliquid esse architecto deleniti asperiores, laboriosam nemo rerum! Ipsam numquam delectus minus iure sit!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae necessitatibus possimus ducimus facere, error, nostrum. Quos sapiente ducimus maxime odio alias dolor consequuntur, maiores commodi exercitationem veniam. Id, ex?</p>
 							<a href="#" class="button large">Read more</a>
 						</div>
 					</li>
-					<li data-bg-image="dummy/slider-3@2x.jpg">
+					<li data-bg-image="dummy/slider-1@2x.jpg">
 						<div class="container">
 							<h3 class="slider-subtitle">Your header goes here</h3>
 							<h2 class="slider-title">Professional</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iure, alias error suscipit porro quidem minus, autem repellendus rerum labore corrupti! Quia quas, architecto, quis non pariatur quisquam nisi magnam.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae necessitatibus possimus ducimus facere, error, nostrum. Quos sapiente ducimus maxime odio alias dolor consequuntur, maiores commodi exercitationem veniam. Id, ex?</p>
 							<a href="#" class="button large">Read more</a>
 						</div>
 					</li>
