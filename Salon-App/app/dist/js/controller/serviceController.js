@@ -1,0 +1,1 @@
+"use strict";app.controller("serviceController",function(e,r,l){r.enableSlider=!1,r.enableFooter=!1});

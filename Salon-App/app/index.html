@@ -17,10 +17,10 @@
 			<header class="site-header">
 				<div class="container">
 					<a id="branding" href="index.html">
-						<img src="css/images/logo.png" alt="Company name" class="logo">
+						<img src="css/images/krishalLogo.png" alt="Company name" class="logo">
 						<div class="logo-copy">
-							<h1 class="site-title">Company Name</h1>
-							<small class="site-description">Slogan goes here</small>
+							<h1 class="site-title">Krishal Beauty Salon</h1>
+							<small class="site-description">Be Simply Beautiful</small>
 						</div>
 					</a> <!-- #branding -->
 
@@ -39,29 +39,13 @@
 			
 			<div ng-if="enableSlider" class="hero hero-slider">
 				<ul class="slides">
-					<li data-bg-image="dummy/slider-1@2x.jpg">
-						<div class="container">
+					<li data-bg-image="uploads/homeImage.jpg">
+						<!--<div class="container">
 							<h3 class="slider-subtitle">Your header goes here</h3>
 							<h2 class="slider-title">Professional</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae necessitatibus possimus ducimus facere, error, nostrum. Quos sapiente ducimus maxime odio alias dolor consequuntur, maiores commodi exercitationem veniam. Id, ex?</p>
 							<a href="#" class="button large">Read more</a>
-						</div>
-					</li>
-					<li data-bg-image="dummy/slider-1@2x.jpg">
-						<div class="container">
-							<h3 class="slider-subtitle">Your header goes here</h3>
-							<h2 class="slider-title">Professional</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae necessitatibus possimus ducimus facere, error, nostrum. Quos sapiente ducimus maxime odio alias dolor consequuntur, maiores commodi exercitationem veniam. Id, ex?</p>
-							<a href="#" class="button large">Read more</a>
-						</div>
-					</li>
-					<li data-bg-image="dummy/slider-1@2x.jpg">
-						<div class="container">
-							<h3 class="slider-subtitle">Your header goes here</h3>
-							<h2 class="slider-title">Professional</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae necessitatibus possimus ducimus facere, error, nostrum. Quos sapiente ducimus maxime odio alias dolor consequuntur, maiores commodi exercitationem veniam. Id, ex?</p>
-							<a href="#" class="button large">Read more</a>
-						</div>
+						</div>-->
 					</li>
 				</ul>
 			</div>
@@ -78,15 +62,16 @@
 								<div class="contact-info">
 									<address>
 										<img src="css/images/icon-map-small.png" class="icon">
-										<p><strong>Company name</strong> 563 Avenue Street, New York</p>
+										<p><strong>Krishal Beauty Salon</strong></p>
+										<p>Address Coming Soon </p>
 									</address>
-									<a href="mailto:contact@companyname.com" class="mail"><img src="css/images/icon-envelope-small.png" class="icon">contact@companyname.com</a>
-									<a href="tel:(500)942042259" class="phone"><img src="css/images/icon-phone-small.png" class="icon">(500)942042259</a>
+									<a href="mailto:patelkristi22@gmail.com" class="mail"><img src="css/images/icon-envelope-small.png" class="icon">patelkristi22@gmail.com</a>
+									<a href="tel:(630)8882511" class="phone"><img src="css/images/icon-phone-small.png" class="icon">(630)8882511</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="widget">
+							<!--<div class="widget">
 								<h3 class="widget-title">Social Media</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident et praesentium </p>
 								<div class="social-links">
@@ -95,15 +80,20 @@
 									<a href="#"><i class="fa fa-google-plus"></i></a>
 									<a href="#"><i class="fa fa-pinterest"></i></a>
 								</div>
-							</div>
+							</div>-->
 						</div>
 						<div class="col-md-4">
 						</div>
 					</div>
 
 					<div class="colophon">
-						<p>Copyright 2014 Company name. Designed by Themezy. All rights reserved.</p>
+						<p>Copyright 2018 krishal salon Designed by salon team. All rights reserved.</p>
 					</div>
+				</div>
+			</footer>
+			<footer ng-if="!enableFooter" class="optional-site-footer">
+				<div class="colophon">
+					<p>Copyright 2018 krishal salon Designed by salon team. All rights reserved.</p>
 				</div>
 			</footer>
 	</div>	
@@ -118,6 +108,10 @@
 	<script type="text/javascript" src="js/controller/homeController.js"></script>
 	<script type="text/javascript" src="js/controller/uploadController.js"></script>
 	<script type="text/javascript" src="js/controller/imagesController.js"></script>
+	<script type="text/javascript" src="js/controller/galleryController.js"></script>
+	<script type="text/javascript" src="js/controller/aboutController.js"></script>
+	<script type="text/javascript" src="js/controller/contactController.js"></script>
+	<script type="text/javascript" src="js/controller/serviceController.js"></script>
 	<script type="text/javascript" src="js/services/service.js"></script>
 	<script type="text/javascript" src="js/services/restService.js"></script>
 </body>

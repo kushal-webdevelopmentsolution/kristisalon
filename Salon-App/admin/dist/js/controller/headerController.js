@@ -1,0 +1,1 @@
+"use strict";app.controller("headerController",function(e,n,t,o){t.getMenu().$promise.then(function(n){e.menus=n})});

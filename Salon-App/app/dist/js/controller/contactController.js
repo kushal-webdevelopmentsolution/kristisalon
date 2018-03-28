@@ -1,0 +1,1 @@
+"use strict";app.controller("contactController",function(e,o,t){o.enableSlider=!1,o.enableFooter=!1});

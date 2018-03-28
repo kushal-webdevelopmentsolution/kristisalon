@@ -10,19 +10,19 @@ var app = angular.module('salonApp', ['ngRoute','restModule','serviceModule']);
 		})
 		.when('/about',{
 			templateUrl: 'views/about.html',
-			controller: 'homeController'
+			controller: 'aboutController'
 		})
 		.when('/contact',{
 			templateUrl: 'views/contact.html',
-			controller: 'homeController'
+			controller: 'contactController'
 		})
 		.when('/gallery',{
 			templateUrl: 'views/gallery.html',
-			controller: 'homeController'
+			controller: 'galleryController'
 		})
 		.when('/services',{
 			templateUrl: 'views/service.html',
-			controller: 'homeController'
+			controller: 'serviceController'
 		})
 		.when('/upload',{
 			templateUrl: 'views/upload.html',

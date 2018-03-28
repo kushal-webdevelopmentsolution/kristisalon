@@ -1,1 +1,1 @@
-"use strict";app.controller("homeController",function(o,r,t){});
+"use strict";app.controller("homeController",function(e,o,l){o.enableSlider=!0,o.enableFooter=!0});
