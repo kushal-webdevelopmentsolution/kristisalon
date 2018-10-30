@@ -12,9 +12,9 @@ app.use(express.static(__dirname));
 app.use(helmet());
 
 var server = http.createServer(app);
-server.listen(port);
 
-console.log("Salon App Started on "+port);
+console.log("Port ",port);
+server.listen(port);
 
 exports = module.exports = app;
 

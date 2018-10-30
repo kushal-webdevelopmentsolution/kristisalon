@@ -59,7 +59,7 @@ module.exports = function(app){
 	})
 	
 	app.get('/',function(req,res,next){
-		res.redirect('http://ec2-18-217-127-212.us-east-2.compute.amazonaws.com/app/#!/home');
+		res.redirect('http://localhost/app/#!/home');
 	})
 	
 	app.post('/api/app/createmenus',menus.createMenus);

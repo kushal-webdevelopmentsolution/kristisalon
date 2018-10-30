@@ -2,15 +2,15 @@
 	"name": "salonApp",
 	"version": "0.5.0",
 	"scripts": {
-		"start": "concurrently \"node server.js\" \"node adminserver.js\" \"gulp build\""
+		"start": "concurrently \"node server.js\" \"gulp build\""
 	},
 	"dependencies": {
-		"aws-sdk": "latest",
+		"aws-sdk": "^2.344.0",
 		"basic-auth": "^2.0.0",
 		"body-parser": "^1.15.1",
 		"cors": "2.8.4",
 		"express": "4.x",
-		"express-session": "~1.13",
+		"express-session": "^1.15.6",
 		"helmet": "^2.1.8",
 		"http": "0.0.0",
 		"lowdb": "^1.0.0",
@@ -19,7 +19,7 @@
 		"passport": "^0.4.0",
 		"passport-local": "^1.0.0",
 		"path": "^0.12.7",
-		"request": "x.x",
+		"request": "^2.88.0",
 		"restler": "x.x",
 		"shortid": "^2.2.8"
 	},
